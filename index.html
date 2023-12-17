@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="O gerador de links para o WhatsApp é uma ótima ferramenta para ações de marketing ou relacionamento. Com o link para mensagens personalizadas do WhatsApp, você poderá utilizar em campanhas, redes sociais, e-mail marketing, banners e etc. O bom de personalizar links e mensagens do WhatsApp é que funcionará no desktop e no mobile da mesma forma. Faça bom uso da ferramenta gratuita de links para WhatsApp.">
+  <title>InnZap - Gerador de Link WhatsApp</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="main-login">
+  <div class="left-login">
+    <!-- Espaço para imagem (pode adicionar um elemento <img> aqui) -->
+    <img src="https://i.postimg.cc/D0zHqXBV/Cod-Py.png" alt="">
+    
+  </div>
+
+  <div class="right-login">
+    <div class="card-login">
+      <h1 class="text-2xl font-bold mb-4 text-green-500">Gerador de Link WhatsApp</h1>
+
+      <div class="textfield">
+        <label for="phoneNumber">Número (inicia com 55):</label>
+        <input type="text" id="phoneNumber" placeholder="Digite o número" class="textfield-input">
+      </div>
+
+      <div class="textfield">
+        <label for="message">Mensagem:</label>
+        <input type="text" id="message" placeholder="Digite a mensagem" class="textfield-input">
+      </div>
+
+      <button class="button-login" onclick="generateLink()">Gerar Link</button>
+
+      <div id="result-container" class="mt-4">
+        <h3 class="text-lg font-semibold mb-2 text-green-500">Link Gerado:</h3>
+        <p id="result" class="bg-gray-700 text-white p-2 rounded-md break-all"></p>
+        <button id="copy-button" class="button-login mt-2" onclick="copyToClipboard()">Copiar Link</button>
+        <p id="copy-feedback" class="text-green-500 mt-2"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
